@@ -1,4 +1,4 @@
-﻿// ========================================
+// ========================================
 //   РОУТИНГ. КУДА ИДЁМ.
 // ========================================
 
@@ -24,7 +24,7 @@ async function loadRoute() {
     
     try {
         const response = await fetch(route);
-        if (!response.ok) throw new Error('Not found');
+        if (!response.ok) throw new Error('Not found: ' + route);
         const html = await response.text();
         app.innerHTML = html;
         
@@ -37,7 +37,7 @@ async function loadRoute() {
             newScript.remove();
         });
     } catch (e) {
-        app.innerHTML = '<p style="color:#fff;text-align:center;padding:50px;">Ошибка загрузки</p>';
+        app.innerHTML = '<p style="color:#fff;text-align:center;padding:50px;font-family:Caveat,cursive;">Ошибка загрузки: ' + route + '</p>';
         console.error('Router error:', e);
     }
 }
