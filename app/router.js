@@ -3,11 +3,11 @@
 // ========================================
 
 const routes = {
-    '/': 'pages/home/index.html',
-    '/portfolio': 'pages/portfolio/index.html',
-    '/scrapbook': 'pages/scrapbook/index.html',
-    '/story': 'pages/story/index.html',
-    '/message': 'pages/message/index.html'
+    '/': '/1-15-33/app/pages/home/index.html',
+    '/portfolio': '/1-15-33/app/pages/portfolio/index.html',
+    '/scrapbook': '/1-15-33/app/pages/scrapbook/index.html',
+    '/story': '/1-15-33/app/pages/story/index.html',
+    '/message': '/1-15-33/app/pages/message/index.html'
 };
 
 export function initRouter() {
