@@ -1,0 +1,28 @@
+﻿/* ========================================
+   ИНПУТ. ОБЩИЙ. ДЛЯ ВСЕХ.
+   ======================================== */
+
+.ui-input {
+    padding: 12px 25px;
+    border: 1px solid var(--color-gold-soft);
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--color-text);
+    font-family: var(--font-hand);
+    font-size: 1.2rem;
+    outline: none;
+    transition: all var(--transition);
+    width: 100%;
+    max-width: 300px;
+}
+
+.ui-input::placeholder {
+    color: var(--color-text-soft);
+    opacity: 0.5;
+}
+
+.ui-input:focus {
+    border-color: var(--color-gold);
+    box-shadow: var(--shadow-glow);
+    background: rgba(255, 215, 0, 0.05);
+}

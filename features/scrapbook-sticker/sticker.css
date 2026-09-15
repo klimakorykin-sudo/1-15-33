@@ -1,0 +1,19 @@
+﻿/* ========================================
+   СТИКЕР. ДЛЯ СКРАПБУКА.
+   ======================================== */
+
+.scrapbook-sticker {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1.8rem;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+    animation: stickerFloat 3s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@keyframes stickerFloat {
+    0%, 100% { transform: rotate(15deg) translateY(0); }
+    50% { transform: rotate(15deg) translateY(-5px); }
+}

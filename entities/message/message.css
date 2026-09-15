@@ -1,0 +1,22 @@
+﻿/* ========================================
+   ПОСЛАНИЕ. СУЩНОСТЬ. СЛОВА ДЛЯ НЕЁ.
+   ======================================== */
+
+.message-content {
+    font-family: var(--font-hand);
+    font-size: 1.4rem;
+    color: #1a1a4e;
+    line-height: 1.8;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.message-highlight {
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+.message-soft {
+    color: rgba(26, 26, 78, 0.6);
+    font-size: 1.1rem;
+}

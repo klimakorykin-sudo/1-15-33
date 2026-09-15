@@ -1,0 +1,38 @@
+﻿/* ========================================
+   СКРОЛЛ-ИСТОРИЯ. ГЛАВЫ ПОЯВЛЯЮТСЯ.
+   ======================================== */
+
+.story-chapter {
+    max-width: 700px;
+    width: 100%;
+    margin: 60px 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 215, 0, 0.06);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.story-chapter.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.story-title {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+    text-shadow: 0 0 40px rgba(255, 215, 0, 0.2);
+    letter-spacing: 2px;
+}
+
+.story-text {
+    font-size: 1.4rem;
+    color: var(--color-text-soft);
+    line-height: 1.8;
+    letter-spacing: 1px;
+}

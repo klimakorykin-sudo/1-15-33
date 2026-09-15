@@ -1,0 +1,86 @@
+﻿/* ========================================
+   ШАПКА. ВСЕГДА СВЕРХУ.
+   ======================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 14, 39, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.06);
+    z-index: 1000;
+    transition: all var(--transition);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    color: var(--color-gold);
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+    letter-spacing: 2px;
+    transition: all var(--transition);
+}
+
+.header-logo:hover {
+    text-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.header-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header-link {
+    font-size: 1.1rem;
+    color: var(--color-text-soft);
+    letter-spacing: 1px;
+    transition: all var(--transition);
+    position: relative;
+}
+
+.header-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-gold);
+    transition: width var(--transition);
+}
+
+.header-link:hover {
+    color: var(--color-gold);
+}
+
+.header-link:hover::after {
+    width: 100%;
+}
+
+/* ===== АДАПТАЦИЯ ===== */
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    
+    .header-nav {
+        gap: 15px;
+    }
+    
+    .header-link {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,13 @@
+﻿/* ========================================
+   HOVER-ЭФФЕКТ. ВЕЗДЕ. ДЛЯ ВСЕГО.
+   ======================================== */
+
+[data-hover] {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+[data-hover]:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.1);
+}

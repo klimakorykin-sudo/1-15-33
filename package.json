@@ -1,0 +1,17 @@
+﻿{
+  "name": "anya-universe",
+  "version": "1.0.0",
+  "description": "Крупный проект для Ани. Уровень студии.",
+  "author": "Клим",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve app",
+    "dev": "npx serve app"
+  },
+  "keywords": [
+    "anya",
+    "universe",
+    "love",
+    "project"
+  ]
+}

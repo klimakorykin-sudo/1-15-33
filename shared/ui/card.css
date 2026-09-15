@@ -1,0 +1,19 @@
+﻿/* ========================================
+   КАРТОЧКА. ОБЩАЯ. ДЛЯ ВСЕХ.
+   ======================================== */
+
+.ui-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 215, 0, 0.06);
+    border-radius: var(--radius-lg);
+    padding: 25px;
+    transition: all 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.ui-card:hover {
+    border-color: rgba(255, 215, 0, 0.15);
+    box-shadow: 0 30px 80px rgba(255, 215, 0, 0.08);
+}

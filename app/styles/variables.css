@@ -1,0 +1,28 @@
+﻿/* ========================================
+   ПЕРЕМЕННЫЕ. JEWEL TONES.
+   ======================================== */
+
+:root {
+    --color-bg: #0a0e27;
+    --color-bg-deep: #1a1a4e;
+    --color-bg-purple: #2d1b69;
+    --color-gold: #ffd700;
+    --color-gold-soft: rgba(255, 215, 0, 0.1);
+    --color-text: #ffffff;
+    --color-text-soft: rgba(255, 255, 255, 0.6);
+    --color-accent: #ff6b6b;
+    --color-accent-soft: rgba(255, 107, 107, 0.2);
+    
+    --font-main: 'Arial', 'Segoe UI', sans-serif;
+    --font-hand: 'Caveat', cursive;
+    
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 50px;
+    
+    --shadow-glow: 0 0 40px rgba(255, 215, 0, 0.1);
+    --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.5);
+    
+    --transition: 0.3s ease;
+}

@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, 
+        var(--color-bg) 0%, 
+        var(--color-bg-deep) 40%, 
+        var(--color-bg-purple) 100%
+    );
+    color: var(--color-text);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#app {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.handwritten {
+    font-family: var(--font-hand);
+    font-weight: 700;
+}
+
+a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}

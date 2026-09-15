@@ -1,0 +1,19 @@
+﻿/* ========================================
+   АНЯ. СУЩНОСТЬ. ЦЕНТР ВСЕЛЕННОЙ.
+   ======================================== */
+
+.anya-name {
+    font-family: var(--font-hand);
+    font-size: 3rem;
+    color: var(--color-gold);
+    text-shadow: 0 0 60px rgba(255, 215, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.anya-traits {
+    font-family: var(--font-hand);
+    font-size: 1.2rem;
+    color: var(--color-text-soft);
+    line-height: 1.8;
+    letter-spacing: 1px;
+}

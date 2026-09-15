@@ -1,0 +1,14 @@
+﻿/* ========================================
+   ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ. ТЬМА / СВЕТ.
+   ======================================== */
+
+html[data-theme="light"] {
+    --color-bg: #f0f0f5;
+    --color-bg-deep: #e0e0ea;
+    --color-bg-purple: #d0d0dd;
+    --color-text: #1a1a4e;
+    --color-text-soft: rgba(26, 26, 78, 0.6);
+    --color-gold: #b8860b;
+    --color-gold-soft: rgba(184, 134, 11, 0.1);
+    --shadow-glow: 0 0 40px rgba(184, 134, 11, 0.05);
+}

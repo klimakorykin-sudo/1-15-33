@@ -1,0 +1,24 @@
+﻿/* ========================================
+   ПОДВАЛ. ТИХО. СПОКОЙНО.
+   ======================================== */
+
+.site-footer {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.12);
+    letter-spacing: 2px;
+}
+
+.footer-small {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.05);
+    margin-top: 5px;
+}
