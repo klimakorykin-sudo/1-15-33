@@ -4,24 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аня. Просто Аня.</title>
-    <link rel="stylesheet" href="/1-15-33/app/styles/variables.css">
-    <link rel="stylesheet" href="/1-15-33/app/styles/global.css">
-    <link rel="stylesheet" href="/1-15-33/app/styles/dark-mode.css">
-    <link rel="stylesheet" href="/1-15-33/app/pages/home/home.css">
+    <style>
+        :root {
+            --color-bg: #0a0e27;
+            --color-bg-deep: #1a1a4e;
+            --color-bg-purple: #2d1b69;
+            --color-gold: #ffd700;
+            --color-gold-soft: rgba(255, 215, 0, 0.1);
+            --color-text: #ffffff;
+            --color-text-soft: rgba(255, 255, 255, 0.6);
+            --font-hand: 'Caveat', cursive;
+            --radius-full: 50px;
+            --transition: 0.3s ease;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #0a0e27 0%, #1a1a4e 40%, #2d1b69 100%);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .home-title {
+            font-family: 'Caveat', cursive;
+            font-size: 6rem;
+            color: #ffd700;
+            text-shadow: 0 0 60px rgba(255, 215, 0, 0.3);
+            letter-spacing: 8px;
+        }
+        
+        .home-subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 4px;
+        }
+        
+        .home-line {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+            margin: 25px 0;
+        }
+        
+        .home-text {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 40px;
+        }
+        
+        .home-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .home-link {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            color: #ffd700;
+            padding: 12px 30px;
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 50px;
+            text-decoration: none;
+            background: rgba(255, 215, 0, 0.03);
+            transition: all 0.3s ease;
+        }
+        
+        .home-link:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: scale(1.05);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="home">
-        <h1 class="home-title handwritten">Аня</h1>
-        <p class="home-subtitle handwritten">просто Аня</p>
+        <h1 class="home-title">Аня</h1>
+        <p class="home-subtitle">просто Аня</p>
         <div class="home-line"></div>
-        <p class="home-text handwritten">
-            Здесь будет твоя вселенная.
-        </p>
+        <p class="home-text">Здесь будет твоя вселенная.</p>
         <nav class="home-nav">
-            <a href="#/portfolio" class="home-link handwritten">Портфолио</a>
-            <a href="#/scrapbook" class="home-link handwritten">Скрапбук</a>
-            <a href="#/story" class="home-link handwritten">История</a>
-            <a href="#/message" class="home-link handwritten">Послание</a>
+            <a href="#/portfolio" class="home-link">Портфолио</a>
+            <a href="#/scrapbook" class="home-link">Скрапбук</a>
+            <a href="#/story" class="home-link">История</a>
+            <a href="#/message" class="home-link">Послание</a>
         </nav>
     </main>
     <script src="/1-15-33/app/pages/home/home.js"></script>
